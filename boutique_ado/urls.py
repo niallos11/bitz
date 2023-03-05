@@ -17,9 +17,11 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from newsletter.views import newsletter_signup
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('signup/', newsletter_signup, name='newsletter_signup'),
     path('accounts/', include('allauth.urls')),
     path('', include('home.urls')),
     path('products/', include('products.urls')),

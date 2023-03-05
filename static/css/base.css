@@ -327,3 +327,20 @@ input[name='q']::placeholder {
         padding: .25rem .5rem !important;
     }
 }
+
+/* Define styles for the newsletter signup button */
+.newsletter-signup button[type="submit"] {
+    background-color: pink;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .newsletter-signup button[type="submit"]:hover {
+    background-color: pink;
+  }
