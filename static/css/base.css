@@ -3,10 +3,9 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: 0B0B45;
     font-family: 'Lato';
 }
 
@@ -330,7 +329,7 @@ input[name='q']::placeholder {
 
 /* Define styles for the newsletter signup button */
 .newsletter-signup button[type="submit"] {
-    background-color: pink;
+    background-color: #0B0B45;
     border: none;
     color: #fff;
     cursor: pointer;
@@ -342,5 +341,36 @@ input[name='q']::placeholder {
   }
 
   .newsletter-signup button[type="submit"]:hover {
-    background-color: pink;
+    background-color: #0B0B45;
+  }
+  footer {
+    background-color: ;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .container {
+    display: inline-block;
+  }
+  
+  .social-icons {
+    margin: 0 auto;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons a i {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover i {
+    color: #0077b5;
   }
