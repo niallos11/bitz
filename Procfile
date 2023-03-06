@@ -1,1 +1,1 @@
-web:gunicorn bitz.wsgi:application
+web: gunicorn app.wsgi:application
