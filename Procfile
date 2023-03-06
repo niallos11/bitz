@@ -1,1 +1,1 @@
-web: python boutique_ado.py
+web: python boutique_ado
