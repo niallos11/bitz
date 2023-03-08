@@ -8,23 +8,45 @@
     </div>
 </div>
 {% endblock %}
-
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">
-                Bitz of everything are here
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
-                        Now</a>
-                </h4>
-            </div>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <br>
+        <h1 class="display-4 logo-font text-black">
+          Bitz of everything are here
+        </h1>
+        <div class="my-5">
+          <h4>
+            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
+          </h4>
         </div>
+      </div>
+      <div class="col-md-6 position-relative px-0">
+        <img class="w-100 h-100 position-absolute top-0 end-0 object-fit-cover" src="/media/0900631B8142A3AFM.jpg" alt="0900631B81B0C2D9M.jpg">
+        <div id="carouselExampleSlidesOnly" class="carousel slide h-100" data-ride="carousel">
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img class="d-block w-100 h-100" src="/media/0900631B8142A3AFM.jpg" alt="0900631B81B0C2D9M.jpg">
+            </div>
+            <div class="carousel-item h-100">
+              <img class="d-block w-100 h-100" src="/media/0900631B8142A3AFM.jpg" alt="0900631B81C9387BM.jpg">
+            </div>
+            <div class="carousel-item h-100">
+              <img class="d-block w-100 h-100" src="/media/0900631B818ABCB9M.jpg" alt="0900631B81D676AEM.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
+  
+  <style>
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  </style>
+  
 <footer>
     <div class="container newsletter-signup">
         <h3>Sign up for our newsletter</h3>
