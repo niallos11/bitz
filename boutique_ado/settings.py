@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 
 import os
 import dj_database_url
+from django.db.models import BigAutoField
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -25,8 +27,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
-DEBUG = 'TRUE'
-ALLOWED_HOSTS = ['bitz.herokuapp.com', 'localhost']
+DEBUG = 'FALSE'
+ALLOWED_HOSTS = ['8000-niallos11-bitz-ggq5ccblix.us2.codeanyapp.com', 'localhost']
 
 
 # Application definition
@@ -217,3 +219,5 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+    DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
